@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="universal-container">
+        <section class="head-container">
+            <div class="content">
+                <h2>SkyCheck</h2>
+                <h2>SkyCheck</h2>
+            </div>
+        </section>
+    
+
+        <div class="main-container">
+            <form id="myForm" method="get">
+                <label for="City" class="city-name">Select City</label><br>
+                <input type="text" class="input-city" id="idInput" name="city"><br>
+                <input id="get" type="submit" value="GET" formaction="get-info"><br>
+            </form>
+            <h1 class="default-text"><%=current%> Location</h1><br>
+            <h1 class="location-city"><%=location%>,<%=country%> :- <%=temperature%> °C , <%=tempF%> F</h1>
+            <h1 class="location-city-t">Latitude : <%=lat%></h1>
+            <h1 class="location-city-t">Longitude : <%=long%></h1>
+        </div>
+
+
+        <div class="fog-bg">
+            <img class="fog fog1" src="http://img13.deviantart.net/b5ed/i/2013/033/d/0/cloud_fog_by_moonglowlilly-d5tk3l7.png">
+    
+            <img class="fog fog2" src="http://img13.deviantart.net/b5ed/i/2013/033/d/0/cloud_fog_by_moonglowlilly-d5tk3l7.png">
+    
+            <img class="fog fog3" src="http://img13.deviantart.net/b5ed/i/2013/033/d/0/cloud_fog_by_moonglowlilly-d5tk3l7.png">
+    
+        </div>
+
+    </div>
+</body>
+</html>

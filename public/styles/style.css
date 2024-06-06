@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+.head-container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	height: 200px;
+}
+
+
+
+.content {
+	position: relative;
+	margin-left: 50%;
+}
+
+.content h2 {
+	color: #fff;
+	font-size: 8em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px black;
+}
+
+.content h2:nth-child(2) {
+	color: white;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+body{
+	background-image: url("./cloudb.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.main-container{
+	width: 900px;
+	height:250px;
+	margin-left: 38%;
+	border-radius: 25px;
+	top: 0px;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.city-name{
+	font-size: 3rem;
+	margin-left: 140px;
+	margin-top: 50px;
+	color: white;
+	font-family: "Mate SC", serif;
+	font-weight: bold;
+}
+.universal-container{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px;
+}
+
+.input-city{
+	width: 400px;
+	height: 50px;
+	margin-left: 50px;
+	font-size: 1.5rem;
+	font-family: "Mate SC", serif;
+}
+#get{
+	width: 100px;
+	height: 55px;
+	font-size: 1.5rem;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin-left: 50px;
+	font-family: "Mate SC", serif;
+	border: none;
+}
+.default-text{
+	font-size: 3rem;
+	margin-left: 100px;
+	margin-top: 50px;
+	color:white;
+	font-family: "Mate SC", serif;
+	font-weight: bold;
+}
+.location-city{
+	font-size: 3rem;
+	
+	margin-top: 50px;
+	color:white;
+	font-family: "Mate SC", serif;
+	font-weight: bold;
+	margin-top: 0;
+	padding-top: 0%;
+}
+.location-city-t{
+	font-size: 3rem;
+	
+	margin-top: 50px;
+	color:white;
+	font-family: "Mate SC", serif;
+	font-weight: bold;
+	margin-top: 0;
+	padding-top: 0%;
+	margin-left: 120px;
+}
+.temp{
+	font-size: 3rem;
+	margin-left: 50px;
+	margin-top: 50px;
+	color:crimson;
+	font-family: "Mate SC", serif;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+.fog-bg {
+  
+	height: 100%;
+	z-index: -1;
+  }
+  .fog {
+	opacity: 0;
+	position: fixed;
+	width: 20%;
+  }
+  
+  .fog1 {
+	width: 50%;
+	animation: fog-animation-1 40s linear infinite;
+	animation-delay: 2s;
+  }
+  
+  .fog2 {
+	width: 80%;
+	animation: fog-animation-2 30s linear infinite;
+	animation-delay: 4s;
+  }
+  
+  .fog3 {
+	width: 100%;
+	animation: fog-animation-3 50s linear infinite;
+	animation-delay: 0;
+  }
+  
+  @keyframes pulse {
+	  0%, 100%   { opacity: 0; }
+	  50% { opacity: 1; }
+  }
+  
+  @keyframes fog-animation-1 {
+	  0%   { top: -50%; left: -80%; opacity: 0.8; }
+	  100% { top:  50%; left: 100%; }
+  }
+  
+  @keyframes fog-animation-2 {
+	  0%   { top:  50%; left: -50%; opacity: 0.8; }
+	  100% { top: -50%; left: 100%; }
+  }
+  
+  @keyframes fog-animation-3 {
+	  0%   { top: 0; left: -60%; opacity: 0.8; }
+	  100% { top:  50%; left: 120%; }
+  }
+
+
+#temp{
+	background-color: transparent;
+}
